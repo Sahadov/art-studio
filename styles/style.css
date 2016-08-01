@@ -1,0 +1,69 @@
+.mainRow { border-right: 2px solid white; }
+@media screen and (max-width: 800px) { .mainRow { border-right: none; } }
+
+.navbar { margin-bottom: 0; background-color: black; color: white; border-color: black; width: 100%; }
+.navbar .social { float: right; }
+.navbar .social a { display: inline-block; padding: 15px 7px; }
+
+.header { min-height: 200px; background-image: url("../images/header.jpg"); background-size: cover; background-position: 50% 0%; text-align: center; }
+.header h1, .header h2 { color: white; display: inline; }
+.header h1 { font-size: 80px; margin-bottom: 0px; margin-top: 40px; }
+@media screen and (max-width: 550px) { .header h1 { font-size: 60px; } }
+@media screen and (max-width: 430px) { .header h1 { font-size: 40px; } }
+.header h2 { font-size: 20px; letter-spacing: 3px; margin: 0px; }
+@media screen and (max-width: 550px) { .header h2 { font-size: 15px; } }
+@media screen and (max-width: 430px) { .header h2 { font-size: 10px; } }
+.header div { margin-top: 39px; border: 1px solid white; display: inline-block; padding: 5px; }
+@media screen and (max-width: 550px) { .header div { margin-top: 52px; } }
+@media screen and (max-width: 430px) { .header div { margin-top: 62px; } }
+
+.mainRow { position: relative; }
+@media screen and (max-width: 500px) { .mainRow { position: static; } }
+
+.verticalLine { min-height: 1700px; background-color: black; border-left: 2px solid white; border-right: 2px solid white; -webkit-transition: all 1s; transition: all 1s; }
+@media screen and (max-width: 768px) { .verticalLine { border: none; min-height: 1300px; } }
+@media screen and (max-width: 500px) { .verticalLine { max-height: 0; display: none; } }
+
+.horizontal { position: absolute; top: 200px; min-height: 300px; background-color: #1ABC9C; }
+@media screen and (max-width: 768px) { .horizontal { top: 100px; } }
+.horizontal h1 { text-align: right; text-transform: uppercase; color: #1ABC9C; }
+.horizontal p { font-family: Georgia, 'Times New Roman', Times, serif; text-align: justify; }
+.horizontal span { font-weight: bold; color: #1ABC9C; }
+
+.description { position: relative; top: -20px; left: -50px; min-height: 250px; background-color: #ECF0F1; }
+@media screen and (max-width: 992px) { .description { top: 0px; left: 0px; } }
+
+.photo { position: relative; top: -50px; left: -50px; min-height: 300px; background-color: blue; background-image: url("../images/team.jpg"); background-size: cover; }
+@media screen and (max-width: 992px) { .photo { top: 0px; left: 0px; } }
+
+.projects .description { position: relative; background-image: url("../images/projects.jpg"); background-size: cover; min-height: 300px; top: -50px; left: 50px; }
+@media screen and (max-width: 992px) { .projects .description { top: 0px; left: 0px; } }
+.projects .smallSize { background-image: url("../images/projects.jpg"); background-size: cover; min-height: 300px; }
+.projects .horizontal { position: absolute; top: 700px; background-color: #E26A6A; -webkit-transition: all 1s; transition: all 1s; }
+@media screen and (max-width: 768px) { .projects .horizontal { top: 500px; } }
+.projects .horizontal h1 { text-align: left; color: #E26A6A; }
+.projects .horizontal span { font-weight: bold; color: #E26A6A; }
+.projects .photo { position: relative; top: -20px; left: 50px; background-color: #ECF0F1; background-image: none; min-height: 250px; }
+@media screen and (max-width: 992px) { .projects .photo { top: 0px; left: 0px; } }
+
+.contacts .horizontal { position: absolute; top: 1200px; background-color: #2980D9; }
+.contacts .horizontal h1 { color: #2980D9; }
+.contacts .horizontal span { font-weight: bold; color: #2980D9; }
+@media screen and (max-width: 768px) { .contacts .horizontal { top: 900px; } }
+.contacts .photo { background-image: url("../images/header4.jpg"); background-size: cover; }
+
+body { background-color: black; -webkit-transition: all 1s; transition: all 1s; }
+
+.footer { padding: 20px 0; background-color: #3A3335; color: black; }
+.footer h4 { text-transform: uppercase; }
+.footer p { margin: 0; }
+
+@media screen and (max-width: 500px) { .description { width: 100%; position: static; }
+  .photo { width: 100%; position: static; }
+  .horizontal { width: 100%; position: static; }
+  .content { width: 94%; }
+  .projects .description, .contacts .description { width: 100%; position: static; }
+  .projects .photo, .contacts .photo { width: 100%; position: static; }
+  .projects .horizontal, .contacts .horizontal { width: 100%; position: static; } }
+
+/*# sourceMappingURL=style.css.map */
