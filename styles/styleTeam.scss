@@ -30,17 +30,35 @@ body {
 		font-size: 80px;
 		margin-bottom: 0px;
 		margin-top: 40px;
+		@media screen and (max-width: 550px) {
+		font-size: 60px;
+		}
+		@media screen and (max-width: 430px) {
+		font-size: 40px;
+		}
 	}
 	h2 {
 		font-size: 20px;
 		letter-spacing: 3px;
 		margin: 0px;
+		@media screen and (max-width: 550px) {
+		font-size:15px;
+		}
+		@media screen and (max-width: 430px) {
+		font-size: 10px;
+		}
 	}
 	div {
 		margin-top: 39px;
 		border: 1px solid white;
 		display:inline-block;
 		padding: 5px;
+		@media screen and (max-width: 550px) {
+		margin-top: 52px;
+		}
+		@media screen and (max-width: 430px) {
+		margin-top: 62px;
+		}
 	}
 }
 .content {
@@ -48,6 +66,9 @@ body {
 	min-height: 500px;
 	border: 3px solid #1ABC9C; 
 	position:relative;
+	@media screen and (max-width: 768px) {
+		border:none;
+	}
 }
 .headName {
 		background-color: #1ABC9C;
@@ -65,10 +86,16 @@ body {
 	min-height: 900px;
 	border-left: 2px solid white;
 	border-right: 2px solid white;
+	@media screen and (max-width: 768px) {
+		border:none;
+	}
 }
 .main {
 	position: relative;
 	border-right:1px solid white;
+	@media screen and (max-width: 1000px) {
+		border-right:none;
+	}
 }
 .content {
 	position:absolute;
@@ -76,6 +103,7 @@ body {
 }
 .teamPhoto {
 	width: 250px;
+	max-width: 100%;
 	border-radius:50%;
 	margin-bottom:20px;
 }
@@ -88,6 +116,10 @@ body {
 		font-size: 40px;
 		font-weight:bold;
 		color:  #1ABC9C;
+	}
+	@media screen and (max-width: 550px) {
+		width: 100%;
+		text-align: center;
 	}
 }
 .teamRight {
@@ -108,9 +140,13 @@ body {
 		font-size: 16px;
 		font-family: Georgia, 'Times New Roman', Times, serif;
 	}
+	@media screen and (max-width: 550px) {
+		width: 100%;
+	}
 
 }
 .footer {
+	overflow: hidden;
   padding: 20px 0;
   background-color: #3A3335;
   color:black;
@@ -120,4 +156,51 @@ body {
   p {
   	margin: 0;
   }
+  @media screen and (max-width: 500px) {
+  	h4 {
+		font-size:16px;
+		}
+		p {
+			font-size:12px;
+		}
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+	.main {
+		position:static;
+	}
+	.content {
+
+		position:static;
+		top:0;
+	}
+	.verticalLine {
+		min-height: 0;
+	}
+	.headName {
+		position:static;
+		top:0px;
+		left:0px;
+		display:block;
+		width:100%;
+		margin-top:20px;
+		padding:10px 10px;
+		text-align: center;
+
+	}
+	.teamLeft {
+		padding-top:50px;
+		padding-bottom:50px;
+		p {
+			font-size: 35px;
+			text-align: right;
+		}
+	}
+	.teamRight {
+		padding-top: 0;
+	}
+
+
 }
