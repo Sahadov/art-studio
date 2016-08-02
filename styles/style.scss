@@ -211,6 +211,9 @@
 	}
 
 }
+.smallSize {
+			display: none;;
+}
 
 
 body {
@@ -247,7 +250,14 @@ body {
 		.content {
 			width:94%;
 		}
-
+		.smallSize {
+			display: block;
+		}
+		.projects {
+			.description {
+				display: none;
+			}
+		}
 		.projects, .contacts {
 			.description {
 			width: 100%;
@@ -262,5 +272,13 @@ body {
 				position: static;
 
 			}
-		}		
+		}	
+		.footer {
+			h4 {
+				font-size:16px;
+			}
+			p {
+				font-size:12px;
+			}
+		}	
 }
