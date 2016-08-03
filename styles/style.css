@@ -56,14 +56,14 @@
 
 body { background-color: black; -webkit-transition: all 1s; transition: all 1s; }
 
-.footer { padding: 20px 0; background-color: #3A3335; color: black; }
+.footer { overflow: hidden; padding: 20px 0; background-color: #3A3335; color: black; }
 .footer h4 { text-transform: uppercase; }
 .footer p { margin: 0; }
 
 @media screen and (max-width: 500px) { .description { width: 100%; position: static; }
   .photo { width: 100%; position: static; }
   .horizontal { width: 100%; position: static; }
-  .content { width: 94%; }
+  .content { width: 90%; }
   .smallSize { display: block; }
   .projects .description { display: none; }
   .projects .description, .contacts .description { width: 100%; position: static; }

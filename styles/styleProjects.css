@@ -1,6 +1,9 @@
 body {
   background-color: black; }
 
+.small-row {
+  display: none; }
+
 .navbar {
   margin-bottom: 0;
   background-color: black;
@@ -26,20 +29,41 @@ body {
     font-size: 80px;
     margin-bottom: 0px;
     margin-top: 40px; }
+    @media screen and (max-width: 550px) {
+      .header h1 {
+        font-size: 60px; } }
+    @media screen and (max-width: 430px) {
+      .header h1 {
+        font-size: 40px; } }
   .header h2 {
     font-size: 20px;
     letter-spacing: 3px;
     margin: 0px; }
+    @media screen and (max-width: 550px) {
+      .header h2 {
+        font-size: 15px; } }
+    @media screen and (max-width: 430px) {
+      .header h2 {
+        font-size: 10px; } }
   .header div {
     margin-top: 39px;
     border: 1px solid white;
     display: inline-block;
     padding: 5px; }
+    @media screen and (max-width: 550px) {
+      .header div {
+        margin-top: 52px; } }
+    @media screen and (max-width: 430px) {
+      .header div {
+        margin-top: 62px; } }
 
 .content {
   background-color: white;
   border: 3px solid #E26A6A;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .content {
+      border: none; } }
 
 .headName {
   background-color: #E26A6A;
@@ -57,10 +81,16 @@ body {
   min-height: 1300px;
   border-left: 2px solid white;
   border-right: 2px solid white; }
+  @media screen and (max-width: 768px) {
+    .verticalLine {
+      border: none; } }
 
 .main {
   position: relative;
   border-right: 1px solid white; }
+  @media screen and (max-width: 1000px) {
+    .main {
+      border-right: none; } }
 
 .content {
   position: absolute;
@@ -74,10 +104,51 @@ body {
 .footer {
   padding: 20px 0;
   background-color: #3A3335;
-  color: black; }
+  color: black;
+  overflow: hidden; }
   .footer h4 {
     text-transform: uppercase; }
   .footer p {
     margin: 0; }
+  @media screen and (max-width: 500px) {
+    .footer h4 {
+      font-size: 16px; }
+    .footer p {
+      font-size: 12px; } }
+
+@media screen and (max-width: 768px) {
+  .main {
+    position: static; }
+
+  .content {
+    position: static;
+    top: 0;
+    padding-top: 20px; }
+
+  .verticalLine {
+    min-height: 0; }
+
+  .headName {
+    position: static;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    margin-bottom: 30px; } }
+@media screen and (max-width: 768px) {
+  .large-row {
+    display: none; }
+
+  .small-row {
+    display: block; } }
+@media screen and (max-width: 450px) {
+  .col-xs-6 {
+    width: 100%; } }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .verticalLine {
+    min-height: 1100px; } }
 
 /*# sourceMappingURL=styleProjects.css.map */

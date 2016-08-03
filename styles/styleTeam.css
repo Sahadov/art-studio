@@ -76,7 +76,7 @@ body {
   left: -20px; }
 
 .verticalLine {
-  min-height: 900px;
+  min-height: 850px;
   border-left: 2px solid white;
   border-right: 2px solid white; }
   @media screen and (max-width: 768px) {
@@ -147,7 +147,7 @@ body {
     .footer p {
       font-size: 12px; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .main {
     position: static; }
 
@@ -177,5 +177,8 @@ body {
 
   .teamRight {
     padding-top: 0; } }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .headName {
+    margin-bottom: 40px; } }
 
 /*# sourceMappingURL=styleTeam.css.map */

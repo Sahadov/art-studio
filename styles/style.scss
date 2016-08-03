@@ -221,7 +221,7 @@ body {
 	transition: all 1s;
 }
 .footer {
-
+	overflow: hidden;
   padding: 20px 0;
   background-color: #3A3335;
   color:black;
@@ -248,7 +248,7 @@ body {
 			position: static;
 		}
 		.content {
-			width:94%;
+			width:90%;
 		}
 		.smallSize {
 			display: block;
